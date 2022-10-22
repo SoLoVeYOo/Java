@@ -3,10 +3,12 @@ import java.util.Scanner;
 
 public class operator_vibora {
     public static void main(String[] args) {
-        int mounth = value;
+        Scanner iScanner = new Scanner(System.in);
+        System.out.printf("Mounth?: ");
+        String number = iScanner.nextLine();
         String text = "";
-        switch (mounth) {
-            case 1:
+        switch (number) {
+            case "1":
                 text = "Autumn";
                 break;
 		            // ...
@@ -14,8 +16,8 @@ public class operator_vibora {
                 text = "mistake";
                 break;
         }
+        System.out.printf("Season, %s!", text);
         System.out.println(text);
         iScanner.close();
     }
-
 }
