@@ -8,6 +8,9 @@ public class proverka_na_kvadrat {
         int num1 = input.nextInt();
         System.out.println("Enter second number: ");
         int num2 = input.nextInt();
+        // System.out.println("Enter numbers: ");
+        // int num1 = input.nextInt();
+        // int num2 = input.nextInt();
         input.close();
         // if (num1*num1 == num2) System.out.print("Первое число является квадратов второго");
         // else if (num2*num2 == num1) System.out.print("Второе число является квадратов первого");
