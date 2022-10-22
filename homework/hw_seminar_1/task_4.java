@@ -35,12 +35,12 @@ public class task_4 {
                 int b = Integer.parseInt(temp_number2);
                 if (a + b == res) {
                     temp = true;
+                    System.out.printf("Решение %s + %s = %d это: %d + %d = %d", num1, num2, res, a, b, res);
                     break;
                 }
             }
             if (temp == true) break;
         }
-        if (temp == true) System.out.print("Решение есть");
-        else System.out.print("Решения нет");
+        if (temp == false) System.out.print("Решения нет");
     }
 }
