@@ -36,10 +36,10 @@ public class task_4 {
                 if (a + b == res) {
                     temp = true;
                     System.out.printf("Решение %s + %s = %d это: %d + %d = %d", num1, num2, res, a, b, res);
-                    break;
+                    // break;
                 }
             }
-            if (temp == true) break;
+            // if (temp == true) break;
         }
         if (temp == false) System.out.print("Решения нет");
     }
