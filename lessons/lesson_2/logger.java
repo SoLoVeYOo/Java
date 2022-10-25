@@ -4,7 +4,7 @@
 // Уровни важности
 // INFO, DEBUG, ERROR, WARNING и др.
 
-// ВыводConsoleHandler info = new ConsoleHandler();
+// Вывод ConsoleHandler info = new ConsoleHandler();
 // log.addHandler(info);
 
 // Формат вывода: структурированный, абы как*
