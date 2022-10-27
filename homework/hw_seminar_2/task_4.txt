@@ -1,0 +1,4 @@
+окт. 26, 2022 10:31:01 PM homework.hw_seminar_2.task_4 main
+INFO: 3.0 + 3.0 = 6.0
+окт. 26, 2022 10:31:33 PM homework.hw_seminar_2.task_4 main
+INFO: 4.0 + 4.0 = 8.0
