@@ -13,7 +13,7 @@ public class arraylist {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
         List<Integer> list = new ArrayList<Integer>();
         list.add(1);
         list.add(123);

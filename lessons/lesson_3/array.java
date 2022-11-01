@@ -18,7 +18,7 @@ public class array {
         temp[length] = item;
         return temp;
     }
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
         int[] a = new int[] { 0, 9 };
         for (int i : a) { System.out.printf("%d ", i); }
         a = AddItem(a, 2);

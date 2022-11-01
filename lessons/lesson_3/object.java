@@ -8,10 +8,10 @@ public class object {
     static void GetType(Object obj) {
         System.out.println(obj.getClass().getName());
     }
-}
- 
-public class Ex01_object {
-    public static void main(String[] args) {
+
+
+
+    public static void main2(String[] args) {
         System.out.println(Sum(1, 2));
         System.out.println(Sum(1.0, 2));
         System.out.println(Sum(1, 2.0));
@@ -26,4 +26,3 @@ public class Ex01_object {
         } else return 0;
     }
 }
- 

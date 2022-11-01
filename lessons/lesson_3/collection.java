@@ -11,7 +11,7 @@ public class collection {
         List<Integer> d = Arrays.asList(date);
         System.out.println(d); // [29, 9, 1990]
     }
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
         StringBuilder day = new StringBuilder("28");
         StringBuilder month = new StringBuilder("9");
         StringBuilder year = new StringBuilder("1990");
