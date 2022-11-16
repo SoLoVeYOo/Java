@@ -31,12 +31,12 @@ public class task_3 {
             } else if (symbols.containsKey(primer.charAt(i))) {
                 char a = skobki.pop();
                 if (a != symbols.get(primer.charAt(i)) || !skobki.isEmpty()) {
-                    t = false;
+                    temp = false;
                     break;
                     }
             }
         }
-        if (t) {
+        if (temp) {
             System.out.println("True");
         } else {
             System.out.println("False");
