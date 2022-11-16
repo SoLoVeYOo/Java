@@ -26,26 +26,27 @@ public class task_1 {
                     String tempPhNum = input.next();
                     StringBuilder phoneNumber = new StringBuilder();
                     phoneNumber.append(tempPhNum);
+
                     if (phoneBook.containsKey(manName)) {
                         StringBuilder temp = new StringBuilder();                
                         temp = phoneBook.get(manName);
                         temp.append(" " + phoneNumber);
                         phoneBook.put(manName, temp);
-                    } else {
-                    phoneBook.put(manName, phoneNumber);
-                    }
-                    // input2.close();
+                    } else phoneBook.put(manName, phoneNumber);
+
                     break;
+
                 case "find":
                     input.nextLine();
                     System.out.println("Input first and second name:");
                     String findCon = input.nextLine();
+
                     if (phoneBook.containsKey(findCon)) {
                         System.out.println(phoneBook.get(findCon));
-                    } else {
-                        System.out.println("No find contakt");
-                    }
+                    } else System.out.println("No find contakt");
+
                     break;
+
                 default:
                     System.out.println("Incorrect comand!");
                     break;
