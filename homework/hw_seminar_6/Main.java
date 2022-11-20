@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Map<Integer, LinkedHashMap> database = new HashMap<Integer, LinkedHashMap>();
+        Map<Integer, LinkedHashMap<String, String>> database = new HashMap<Integer, LinkedHashMap<String, String>>();
         Integer id = 1;
         Notebooks notebook1 = new Notebooks("HP 250 G8", 15.6, "TN", 3.1, "Intel Core i3 1115250",
         256, "SSD", 8, "DDR4", 1, "Intel UHD Graphics", "темно-серебристый", 49890);
@@ -116,7 +116,7 @@ public class Main {
                     searchCriterii.put("price", findPrice);
                     break;
                 case "result":
-                    boolean temp = false;
+                    boolean flag = false;
                     for (int index = 1; index <= spisok.size(); index++) {
                         if (Double.parseDouble(((String) ((Map)spisok.get(index)).get("diagonal")).replace(",",".")) >= findDiag || findDiag == 0.0)  {
                             if (Double.parseDouble(((String) ((Map)spisok.get(index)).get("processorGigaGz")).replace(",",".")) >= findProcGz || findProcGz == 0.0) {
@@ -125,7 +125,7 @@ public class Main {
                                         if ((((Map)spisok.get(index)).get("color").equals(findColor)) || findColor == "none") {
                                             if (Integer.parseInt(((String) ((Map)spisok.get(index)).get("price"))) >= findOzu || findOzu == 0) {
                                                 System.out.println(spisok.get(index));
-                                                temp = true;
+                                                flag = true;
                                             }
                                         }
                                     }
@@ -133,15 +133,16 @@ public class Main {
                             }
                         }
                     }
-                    if (!temp) {
+                    if (!flag) {
                         System.out.println("Нет ноутбуков удовлетворяющих критериям");
                     }
                     break;
                 case "clear": 
                     searchCriterii.putAll(searchCriteriiZero);
+                    break;
                 default:
                     System.out.println("Неверно введены данные");
-                break;
+                    break;
             }        
         }
     }
